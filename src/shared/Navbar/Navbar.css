@@ -1,0 +1,75 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  position: relative;
+  .navbarComponent {
+    width: 245px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+    margin-top: 16px;
+    a {
+      color: #505f98;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 400;
+      position: relative;
+      padding-bottom: 5px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background-color: #505f98;
+        transition: width 0.4s ease;
+      }
+      &.active::after {
+        width: 100%;
+      }
+      &:hover {
+        color: #252d4b;
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    width: 79px;
+    height: 38px;
+    top: 8px;
+    left: 681px;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447e;
+    z-index: 1;
+  }
+  .button {
+    width: 160px;
+    height: 26px;
+    text-decoration: none;
+    text-align: center;
+    font-family: roboto;
+    position: absolute;
+    top: 16px;
+    right: 150px;
+    border-radius: 2px;
+    border: 3px solid #111b47;
+    background-color: #111b47;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+    &:hover {
+      background-color: white;
+      color: #111b47;
+    }
+  }
+}

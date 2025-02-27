@@ -1,0 +1,86 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #e7ecff;
+  margin-top: -55px;
+  font-family: Roboto;
+  position: relative;
+  .top {
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #939ea4;
+      position: absolute;
+      left: 165px;
+      top: 38px;
+    }
+    .logo {
+      position: absolute;
+      width: 79px;
+      height: 38px;
+      top: 28px;
+      left: 650px;
+      font-family: roboto;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 38px;
+      color: #37447e;
+    }
+    button {
+      width: 160px;
+      height: 26px;
+      text-decoration: none;
+      text-align: center;
+      position: absolute;
+      top: 33px;
+      right: 165px;
+      border-radius: 2px;
+      border: 3px solid #111b47;
+      background-color: #111b47;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background-color: white;
+        color: #111b47;
+      }
+    }
+  }
+  .line {
+    width: 77%;
+    height: 2px;
+    position: absolute;
+    left: 160px;
+    top: 90px;
+  }
+  .bottom {
+    .footerEnd {
+      position: absolute;
+      top: 120px;
+      left: 110px;
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #929ecc;
+        padding-left: 50px;
+      }
+    }
+    .icons {
+      display: flex;
+      gap: 20px;
+      position: absolute;
+      top: 125px;
+      right: 165px;
+      img {
+        width: 13px;
+        height: 14px;
+      }
+    }
+  }
+}
