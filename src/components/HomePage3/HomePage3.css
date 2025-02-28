@@ -1,0 +1,63 @@
+.home3 {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+  gap: 20px;
+  .featureCard {
+    display: flex;
+    gap: 130px;
+    .image {
+      .feature-image {
+        width: 540px;
+        height: 390px;
+      }
+    }
+    .texts {
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding-top: 30px;
+      gap: 20px;
+      .feature-title {
+        color: #091133;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0px;
+      }
+      .feature-text {
+        color: #6f7cb2;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+      }
+      button {
+        width: 160px;
+        height: 26px;
+        text-decoration: none;
+        text-align: center;
+        font-family: roboto;
+        border-radius: 2px;
+        border: 3px solid #111b47;
+        background-color: #111b47;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+          background-color: white;
+          color: #111b47;
+        }
+      }
+    }
+  }
+}
