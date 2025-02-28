@@ -1,0 +1,98 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../../assets/images/backgroundEnd.png") no-repeat center
+    center fixed;
+  background-size: contain;
+  overflow: hidden;
+  text-align: center;
+  font-family: roboto;
+}
+
+.not-found-content {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #929ecc;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideIn 1s ease forwards, fadeIn 1.5s ease forwards;
+}
+
+.not-found-title {
+  font-size: 120px;
+  font-weight: bold;
+  color: #929ecc;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards, bounce 1s ease infinite;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.smile {
+  font-size: 80px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  animation: sad-face 1.5s ease-in-out infinite, move 5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes sad-face {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.not-found-message {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.back-home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #929ecc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-home-button:hover {
+  background-color: #6b7db3;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
