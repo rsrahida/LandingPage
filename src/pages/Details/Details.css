@@ -9,6 +9,7 @@
   padding: 20px;
   box-sizing: border-box;
 }
+
 .content-box {
   width: 80%;
   height: 80vh;
@@ -17,15 +18,15 @@
   gap: 100px;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgb(115, 150, 253);
-  transform: translateY(100%);
-  animation: slideUp 1s ease-out forwards;
 }
+
 .feature-image {
   width: 400px;
   height: 350px;
   margin: 70px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .feature-info {
   h1 {
     font-size: 3rem;
@@ -56,13 +57,5 @@
     color: black;
     background-color: #5dabff;
     box-shadow: 0 4px 8px rgba(116, 69, 234, 0.1);
-  }
-}
-@keyframes slideUp {
-  0% {
-    transform: translateY(70%);
-  }
-  100% {
-    transform: translateY(0%);
   }
 }
